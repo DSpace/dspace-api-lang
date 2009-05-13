@@ -1,0 +1,307 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>org.dspace</groupId>
+   <artifactId>dspace-api-lang</artifactId>
+   <name>DSpace I18N :: Language Packs</name>
+   <version>1.5.0.0</version>
+   <description>
+      DSpace Language Packs to support multiple languages.
+   </description>
+   <url>http://projects.dspace.org/dspace-api-lang</url>
+
+   <organization>
+      <name>The DSpace Foundation</name>
+      <url>http://www.dspace.org</url>
+   </organization>
+
+   <build>
+     <resources>
+         <resource>
+            <directory>src/main/resources</directory>
+            <excludes>
+               <exclude>**/*.properties.UTF-8</exclude>
+            </excludes>
+         </resource>
+      </resources>
+      <plugins>
+         <!-- 
+            Java 1.5 is our officially endorsed build target
+            platform.  
+         -->
+         <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+               <source>1.5</source>
+               <target>1.5</target>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+               <archive>
+                  <manifest>
+                     <addDefaultImplementationEntries>
+                        true
+                     </addDefaultImplementationEntries>
+                     <addDefaultSpecificationEntries>
+                        true
+                     </addDefaultSpecificationEntries>
+                  </manifest>
+               </archive>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+
+   <repositories>
+      <repository>
+         <id>maven.dspace.org/snapshot</id>
+         <name>DSpace Maven Snapshot Repository</name>
+         <url>http://maven.dspace.org/snapshot</url>
+         <releases>
+            <enabled>false</enabled>
+            <checksumPolicy>fail</checksumPolicy>
+         </releases>
+         <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+            <checksumPolicy>fail</checksumPolicy>
+         </snapshots>
+      </repository>
+   </repositories>
+
+   <pluginRepositories>
+      <pluginRepository>
+         <id>maven.dspace.org/snapshot</id>
+         <name>DSpace Maven Repository</name>
+         <url>http://maven.dspace.org/snapshot</url>
+         <releases>
+            <enabled>false</enabled>
+            <checksumPolicy>fail</checksumPolicy>
+         </releases>
+         <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+            <checksumPolicy>fail</checksumPolicy>
+         </snapshots>
+      </pluginRepository>
+   </pluginRepositories>
+
+   <licenses>
+      <license>
+         <name>DSpace Sourcecode License</name>
+         <url>LICENSE.txt</url>
+         <distribution>repo</distribution>
+         <comments>
+            A BSD compatable OSS license for the DSpace codebase.
+         </comments>
+      </license>
+   </licenses>
+
+   <issueManagement>
+      <system>Sourceforge Issue Tracking</system>
+      <url>http://sourceforge.net/tracker/?group_id=19984</url>
+   </issueManagement>
+
+   <mailingLists>
+      <mailingList>
+         <name>DSpace Technical Users List</name>
+         <subscribe>
+            http://lists.sourceforge.net/mailman/listinfo/dspace-tech
+         </subscribe>
+         <unsubscribe>
+            http://lists.sourceforge.net/mailman/listinfo/dspace-tech
+         </unsubscribe>
+         <post>dspace-tech AT lists.sourceforge.net</post>
+         <archive>
+            http://sourceforge.net/mailarchive/forum.php?forum_name=dspace-tech
+         </archive>
+      </mailingList>
+      <mailingList>
+         <name>DSpace Developers List</name>
+         <subscribe>
+            http://lists.sourceforge.net/mailman/listinfo/dspace-devel
+         </subscribe>
+         <unsubscribe>
+            http://lists.sourceforge.net/mailman/listinfo/dspace-devel
+         </unsubscribe>
+         <post>dspace-devel AT lists.sourceforge.net</post>
+         <archive>
+            http://sourceforge.net/mailarchive/forum.php?forum_name=dspace-devel
+         </archive>
+      </mailingList>
+      <mailingList>
+         <name>DSpace Manakin List</name>
+         <subscribe>
+            http://lists.sourceforge.net/mailman/listinfo/dspace-manakin
+         </subscribe>
+         <unsubscribe>
+            http://lists.sourceforge.net/mailman/listinfo/dspace-manakin
+         </unsubscribe>
+         <post>dspace-manakin AT lists.sourceforge.net</post>
+         <archive>
+            http://sourceforge.net/mailarchive/forum.php?forum_name=dspace-manakin
+         </archive>
+      </mailingList>
+      <mailingList>
+         <name>DSpace SCM Commit Change-Log</name>
+         <subscribe>
+            http://lists.sourceforge.net/mailman/listinfo/dspace-changelog
+         </subscribe>
+         <unsubscribe>
+            http://lists.sourceforge.net/mailman/listinfo/dspace-changelog
+         </unsubscribe>
+         <post>noreply AT lists.sourceforge.net</post>
+         <archive>
+            http://sourceforge.net/mailarchive/forum.php?forum_name=dspace-changelog
+         </archive>
+      </mailingList>
+   </mailingLists>
+
+   <!-- 
+      Distribution Management is currently used by the Continuum server
+      to update snapshots it generates. This will also be used on 
+      release to deploy release versions to the repository by the
+      release manager.
+   -->
+   <distributionManagement>
+      <repository>
+         <id>maven.dspace.org/release</id>
+         <name>DSpace Maven Repository</name>
+         <url>scp://maven.dspace.org/var/maven/release</url>
+      </repository>
+      <snapshotRepository>
+         <id>maven.dspace.org/snapshot</id>
+         <name>DSpace Maven Repository</name>
+         <url>scp://maven.dspace.org/var/maven/snapshot</url>
+         <uniqueVersion>false</uniqueVersion>
+      </snapshotRepository>
+      <site>
+         <id>website</id>
+         <url>
+            scp://projects.dspace.org/var/www/projects.dspace.org/htdocs
+         </url>
+      </site>
+   </distributionManagement>
+
+   <!-- 
+      The Subversion repository location is used by Continuum to update against
+      when changes have occured, this spawns a new build cycle and releases snapshots
+      into the snapshot repository below.
+   -->
+   <scm>
+      <connection>scm:svn:http://dspace-sandbox.googlecode.com/svn/modules/dspace-api-lang/tags/dspace-api-lang-1.5.0.0</connection>
+      <developerConnection>scm:svn:https://dspace-sandbox.googlecode.com/svn/modules/dspace-api-lang/tags/dspace-api-lang-1.5.0.0</developerConnection>
+      <url>http://dspace-sandbox.googlecode.com/svn/modules/dspace-api-lang/tags/dspace-api-lang-1.5.0.0</url>
+   </scm>
+
+   <profiles>
+      <profile>
+         <id>native2ascii</id>
+         <activation>
+            <activeByDefault>false</activeByDefault>
+         </activation>
+         <build>
+            <plugins>
+               <plugin>
+                  <artifactId>maven-antrun-plugin</artifactId>
+                  <configuration>
+                     <tasks>
+                        <mkdir dir="target/classes" />
+                        <native2ascii encoding="UTF8" src="${basedir}/src/main/native2ascii" dest="${basedir}/src/main/resources" includes="**/*.properties.UTF-8" ext="" />
+                     </tasks>
+                  </configuration>
+                  <executions>
+                     <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                           <goal>run</goal>
+                        </goals>
+                     </execution>
+                  </executions>
+                  <dependencies>
+                     <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant-nodeps</artifactId>
+                        <version>1.7.0</version>
+                     </dependency>
+                     <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant</artifactId>
+                        <version>1.7.0</version>
+                     </dependency>
+                  </dependencies>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+   </profiles>
+
+   <reporting>
+      <excludeDefaults>true</excludeDefaults>
+      <plugins>
+         <plugin>
+            <groupId>org.dspace.maven.plugins</groupId>
+            <artifactId>dspace-i18n-report-plugin</artifactId>
+            <version>1.0</version>
+         </plugin>
+         <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <configuration>
+               <links>
+                  <link>http://projects.dspace.org/dspace/apidocs</link>
+                  <link>
+                     http://projects.dspace.org/dspace-api/apidocs
+                  </link>
+                  <link>
+                     http://projects.dspace.org/dspace-jspui/apidocs
+                  </link>
+                  <link>
+                     http://projects.dspace.org/dspace-oai/apidocs
+                  </link>
+                  <link>http://java.sun.com/j2se/1.5.0/docs/api</link>
+                  <link>
+                     http://jakarta.apache.org/commons/collections/apidocs-COLLECTIONS_3_0/
+                  </link>
+                  <link>
+                     http://jakarta.apache.org/commons/dbcp/apidocs/
+                  </link>
+                  <link>
+                     http://jakarta.apache.org/commons/fileupload/apidocs/
+                  </link>
+                  <link>
+                     http://jakarta.apache.org/commons/httpclient/apidocs/
+                  </link>
+                  <link>
+                     http://jakarta.apache.org/commons/logging/api/
+                  </link>
+                  <link>
+                     http://jakarta.apache.org/commons/pool/apidocs/
+                  </link>
+                  <link>http://www.junit.org/junit/javadoc/</link>
+                  <link>http://logging.apache.org/log4j/docs/api/</link>
+                  <link>http://jakarta.apache.org/regexp/apidocs/</link>
+                  <link>http://jakarta.apache.org/velocity/api/</link>
+               </links>
+            </configuration>
+         </plugin>
+         <plugin>
+            <artifactId>maven-jxr-plugin</artifactId>
+            <configuration>
+               <aggregate>true</aggregate>
+            </configuration>
+         </plugin>
+         <plugin>
+            <artifactId>maven-site-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>jdepend-maven-plugin</artifactId>
+            <version>2.0-beta-1</version>
+         </plugin>
+      </plugins>
+   </reporting>
+
+
+</project>
