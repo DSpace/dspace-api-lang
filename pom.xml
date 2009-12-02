@@ -174,9 +174,9 @@
       into the snapshot repository below.
    -->
    <scm>
-      <connection>scm:svn:http://dspace-sandbox.googlecode.com/svn/modules/dspace-api-lang/trunk</connection>
-      <developerConnection>scm:svn:https://dspace-sandbox.googlecode.com/svn/modules/dspace-api-lang/trunk</developerConnection>
-      <url>http://dspace-sandbox.googlecode.com/svn/modules/dspace-api-lang/trunk</url>
+      <connection>scm:svn:http://scm.dspace.org/svn/repo/modules/dspace-api-lang/trunk</connection>
+      <developerConnection>scm:svn:https://scm.dspace.org/svn/repo/modules/dspace-api-lang/trunk</developerConnection>
+      <url>http://scm.dspace.org/svn/repo/modules/dspace-api-lang/trunk</url>
    </scm>
 
    <profiles>
