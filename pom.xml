@@ -3,7 +3,7 @@
    <groupId>org.dspace</groupId>
    <artifactId>dspace-api-lang</artifactId>
    <name>DSpace I18N :: Language Packs</name>
-   <version>1.6.1.1-SNAPSHOT</version>
+   <version>1.6.2.0</version>
    <description>
       DSpace Language Packs to support multiple languages.
    </description>
@@ -179,9 +179,9 @@
       into the snapshot repository below.
    -->
    <scm>
-      <connection>scm:svn:http://scm.dspace.org/svn/repo/modules/dspace-api-lang/trunk</connection>
-      <developerConnection>scm:svn:https://scm.dspace.org/svn/repo/modules/dspace-api-lang/trunk</developerConnection>
-      <url>http://scm.dspace.org/svn/repo/modules/dspace-api-lang/trunk</url>
+      <connection>scm:svn:http://scm.dspace.org/svn/repo/modules/dspace-api-lang/tags/dspace-api-lang-1.6.2.0</connection>
+      <developerConnection>scm:svn:https://scm.dspace.org/svn/repo/modules/dspace-api-lang/tags/dspace-api-lang-1.6.2.0</developerConnection>
+      <url>http://scm.dspace.org/svn/repo/modules/dspace-api-lang/tags/dspace-api-lang-1.6.2.0</url>
    </scm>
 
    <profiles>
