@@ -14,6 +14,12 @@
       <url>http://www.dspace.org</url>
    </organization>
 
+   <parent>
+     <artifactId>dspace-pom</artifactId>
+     <groupId>org.dspace</groupId>
+     <version>6</version>
+   </parent>
+
    <!--Force UTF-8 encoding during build on all platforms-->
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -58,23 +64,6 @@
          </plugin>
       </plugins>
    </build>
-
-   <repositories>
-      <repository>
-         <id>maven.dspace.org/snapshot</id>
-         <name>DSpace Maven Snapshot Repository</name>
-         <url>http://maven.dspace.org/snapshot</url>
-         <releases>
-            <enabled>false</enabled>
-            <checksumPolicy>fail</checksumPolicy>
-         </releases>
-         <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-            <checksumPolicy>fail</checksumPolicy>
-         </snapshots>
-      </repository>
-   </repositories>
 
    <licenses>
       <license>
@@ -146,32 +135,6 @@
          </archive>
       </mailingList>
    </mailingLists>
-
-   <!-- 
-      Distribution Management is currently used by the Continuum server
-      to update snapshots it generates. This will also be used on 
-      release to deploy release versions to the repository by the
-      release manager.
-   -->
-   <distributionManagement>
-      <repository>
-         <id>maven.dspace.org/release</id>
-         <name>DSpace Maven Repository</name>
-         <url>scp://maven.dspace.org/var/maven/release</url>
-      </repository>
-      <snapshotRepository>
-         <id>maven.dspace.org/snapshot</id>
-         <name>DSpace Maven Repository</name>
-         <url>scp://maven.dspace.org/var/maven/snapshot</url>
-         <uniqueVersion>false</uniqueVersion>
-      </snapshotRepository>
-      <site>
-         <id>website</id>
-         <url>
-            scp://projects.dspace.org/var/www/projects.dspace.org/htdocs
-         </url>
-      </site>
-   </distributionManagement>
 
    <!-- 
       The Subversion repository location is used by Continuum to update against
