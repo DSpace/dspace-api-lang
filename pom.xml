@@ -3,7 +3,7 @@
    <groupId>org.dspace</groupId>
    <artifactId>dspace-api-lang</artifactId>
    <name>DSpace I18N :: Language Packs</name>
-   <version>1.8.0.1-SNAPSHOT</version>
+   <version>1.7.1.1-SNAPSHOT</version>
    <description>
       DSpace Language Packs to support multiple languages.
    </description>
