@@ -1637,10 +1637,23 @@ org.dspace.statistics.util.LocationUtils.unknown-continent = 不明の大陸
 org.dspace.statistics.util.LocationUtils.unknown-country = 不明の国
 
 itemRequest.all = 全ファイル
-itemRequest.response.body.approve = {0}殿,\n\
-itemRequest.response.body.reject = {0}殿,\n\
-itemRequest.response.body.contactAuthor = {0} 殿,\n\n\
-itemRequest.response.body.contactRequester = {0} 殿,\n\n\
+itemRequest.response.body.approve = {0} 殿\n\n前略\n\n\
+貴殿から送付依頼のあった論文 "{2}" ({1})の複製を添付しますのでご確認ください。\n\n早々\n{3} <{4}>
+itemRequest.response.body.reject = {0} 殿\n\n\
+前略\n\n貴殿から送付依頼のあった論文 "{2}" ({1})の件ですが、\n残念ながら許諾を得ることができませんでしたので送付できません。\n\
+あしからずご了承ください。\n\n\早々\n{3} <{4}>
+itemRequest.response.body.contactAuthor = {0} 殿\n\n\拝啓\n\n\
+DSpaceには貴殿の著作 "{1}" のデジタル版を保管されております。そのURLは {2} です。\n\n\
+この著作本文は一般公開されていませんが、このたび利用者から利用の依頼がありました。\n\
+そこでこの著作の著作権は持つ貴殿からの利用の許諾をいただきたいと思い、メールを差し上げました。\n\
+許諾がいただける場合は、私の方から利用者に著作の複製を送付させていただきます。\n\
+ご多忙中申し訳ありませんが、許諾の有無をご連絡いただくようお願いいたいます。\n\n\
+依頼者: {5} <{6}>\n\
+依頼メッセージ: {7}\n\n\
+敬具\n{3} <{4}>
+itemRequest.response.body.contactRequester = {0} 殿\n\n\
+前略\n\n貴殿からの論文抜刷の送付依頼を受け付けました。著作の送付が可能か否かについて著作権を有する著者に問い合わせいたします。\n\n\
+著者からの返事があり次第、結果をご連絡いたしますので、しばらくお待ちください。\n\n\早々\n{1} <{2}>
 itemRequest.response.subject.contactAuthor = 論文抜刷の送付依頼
 itemRequest.response.subject.contactRequester = 論文抜刷の送付依頼
 itemRequest.response.subject.approve = 論文抜刷の送付依頼
