@@ -1641,8 +1641,8 @@ itemRequest.response.body.approve = {0} 殿\n\n前略\n\n\
 貴殿から送付依頼のあった論文 "{2}" ({1})の複製を添付しますのでご確認ください。\n\n早々\n{3} <{4}>
 itemRequest.response.body.reject = {0} 殿\n\n\
 前略\n\n貴殿から送付依頼のあった論文 "{2}" ({1})の件ですが、\n残念ながら許諾を得ることができませんでしたので送付できません。\n\
-あしからずご了承ください。\n\n\早々\n{3} <{4}>
-itemRequest.response.body.contactAuthor = {0} 殿\n\n\拝啓\n\n\
+あしからずご了承ください。\n\n早々\n{3} <{4}>
+itemRequest.response.body.contactAuthor = {0} 殿\n\n拝啓\n\n\
 DSpaceには貴殿の著作 "{1}" のデジタル版を保管されております。そのURLは {2} です。\n\n\
 この著作本文は一般公開されていませんが、このたび利用者から利用の依頼がありました。\n\
 そこでこの著作の著作権は持つ貴殿からの利用の許諾をいただきたいと思い、メールを差し上げました。\n\
@@ -1653,7 +1653,7 @@ DSpaceには貴殿の著作 "{1}" のデジタル版を保管されておりま�
 敬具\n{3} <{4}>
 itemRequest.response.body.contactRequester = {0} 殿\n\n\
 前略\n\n貴殿からの論文抜刷の送付依頼を受け付けました。著作の送付が可能か否かについて著作権を有する著者に問い合わせいたします。\n\n\
-著者からの返事があり次第、結果をご連絡いたしますので、しばらくお待ちください。\n\n\早々\n{1} <{2}>
+著者からの返事があり次第、結果をご連絡いたしますので、しばらくお待ちください。\n\n早々\n{1} <{2}>
 itemRequest.response.subject.contactAuthor = 論文抜刷の送付依頼
 itemRequest.response.subject.contactRequester = 論文抜刷の送付依頼
 itemRequest.response.subject.approve = 論文抜刷の送付依頼
@@ -1723,9 +1723,9 @@ jsp.request.item.request-free-acess.info2 = アクセスを制限する理由が
 jsp.request.item.request-free-acess.name = 名前:
 jsp.request.item.request-free-acess.title = 回答を送信しました。
 jsp.request.item.request-information.info1 = 件名: 別刷り送付依頼
-jsp.request.item.request-information.info2 = あなたが資料 {0} の著者（あるいは著者の一人）でしたら、{1} からの別刷り送付依頼に回答をお願いします。
+jsp.request.item.request-information.info2 = 登録された資料 {0} に利用者 {1} から別刷りの送付依頼がありました。お手数ですが回答をお願いします。
 jsp.request.item.request-information.no = 送付しない
-jsp.request.item.request-information.note = 回答にしたがって自動的に返信メールが作成されます。これは変更することができます。
+jsp.request.item.request-information.note = 利用者へ送付されるメールが自動作成されますが、文面は次の画面で変更することができます。
 jsp.request.item.request-information.title = 別刷り送付依頼
 jsp.request.item.request-information.yes = 送付する
 jsp.request.item.request-letter.accept.heading = 依頼を受ける
