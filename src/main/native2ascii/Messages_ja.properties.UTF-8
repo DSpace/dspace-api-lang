@@ -2026,3 +2026,12 @@ jsp.mydspace.main.heading8 = 一括インポート
 jsp.submit.choose-file.upload-resumable.button.select-file = ファイルを選択するか、ここにドラック＆ドロップしてください 
 jsp.submit.choose-file.upload-resumable.unsupported = ご使用のブラウザはこのファイルアップロード機能が使用できません。この機能を使用するには<a href="http://www.w3.org/TR/FileAPI/">HTML5 File API</a>と<a href="http://www.w3.org/TR/FileAPI/#normalization-of-params">ファイルスライス</a>機能をサポートしたブラウズを使用してください。
 org.dspace.app.requestitem.RequestItemHelpdeskStrategy.helpdeskname = 連絡先
+
+jsp.dspace-admin.batchimport.info.success = インポート処理を受け付けました。終了次第メールでお知らせします。なお、<a href="{0}">マイ・リポジトリ</a> 画面で進捗状況を確認できます。
+jsp.dspace-admin.batchimport.saf.remote = シンプル・アーカイブフォーマット（リモートURLにあるzipファイル）
+jsp.dspace-admin.batchimport.saf.upload = シンプル・アーカイブフォーマット（ローカルにあるzipファイル）
+jsp.dspace-admin.batchimport.hide = 詳細非表示
+jsp.dspace-admin.batchimport.show = 詳細表示
+jsp.dspace-admin.batchimport.hideitems = アイテムを非表示
+jsp.dspace-admin.batchimport.showitems = アイテムを表示
+jsp.dspace-admin.batchimport.errormsg = エラーメッセージ
