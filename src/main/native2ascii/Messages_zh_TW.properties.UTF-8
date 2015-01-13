@@ -988,7 +988,7 @@ jsp.submit.edit-metadata.button.remove2                                         
 jsp.submit.edit-metadata.cancelsave                                             = 取消/儲存
 jsp.submit.edit-metadata.controlledvocabulary                                   = 關鍵字分類
 jsp.submit.edit-metadata.day                                                    = 日期：
-jsp.submit.edit-metadata.firstname                                              = 名 +「Jr」<br/> 例如：「Donald Jr」
+jsp.submit.edit-metadata.firstname                                              = 名 +「Jr」， 例如：「Donald Jr」
 jsp.submit.edit-metadata.heading                                                = 上傳： 描述文件
 jsp.submit.edit-metadata.help                                                   = <span class="glyphicon glyphicon-question-sign"></span>
 jsp.submit.edit-metadata.info1                                                  = 請填寫關於您上傳的必要資訊。在大多數的瀏覽器中，您可以使用「Tab」鍵來移動游標至下個欄位或按鍵，省去您使用滑鼠移動的時間。
