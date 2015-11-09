@@ -6,7 +6,7 @@
     <description>
       DSpace Language Packs to support multiple languages.
     </description>
-    <version>5.0.6-SNAPSHOT</version>
+    <version>5.0.6</version>
 
     <organization>
         <name>DuraSpace</name>
@@ -46,7 +46,7 @@
         <connection>scm:git:git@github.com:DSpace/dspace-api-lang.git</connection>
         <developerConnection>scm:git:git@github.com:DSpace/dspace-api-lang.git</developerConnection>
         <url>git@github.com:DSpace/dspace-api-lang.git</url>
-        <tag>HEAD</tag>
+        <tag>dspace-api-lang-5.0.6</tag>
     </scm>
 
    <profiles>
