@@ -1,5 +1,9 @@
 
-# DSpace API and JSPUI Language Packs
+# DSpace API Language Packs
+
+This project is for language packs for the dspace-api in https://github.com/DSpace/DSpace.
+* `main` branch = 7.x Java API language packs (for backend only)
+* `dspace-6_x` branch = 6.x (and below) API & JSPUI language packs
 
 ## Layout of the source tree
 
@@ -57,9 +61,9 @@ In a complete translation for a particular version, there should be no missing o
 
 ## Documentation
 
-Additional documentation on language packs and I18N (internationalization) may be found at [Internationalization Support](https://wiki.duraspace.org/pages/viewpage.action?pageId=19006307)
+Additional documentation on language packs and I18N (internationalization) may be found at [Internationalization Support](https://wiki.lyrasis.org/pages/viewpage.action?pageId=19006307)
 
-Documentation for each release may be viewed online or downloaded via our [Documentation Wiki](https://wiki.duraspace.org/display/DSDOC/).
+Documentation for each release may be viewed online or downloaded via our [Documentation Wiki](https://wiki.lyrasis.org/display/DSDOC/).
 
 ## Contributing
 
@@ -67,14 +71,14 @@ DSpace is a community built and supported project. We do not have a centralized 
 but have a dedicated group of volunteers who help us improve the software, documentation, resources, etc.
 
 We welcome contributions of any type. Here's a few basic guides that provide suggestions for contributing to DSpace:
-* [How to Contribute to DSpace](https://wiki.duraspace.org/display/DSPACE/How+to+Contribute+to+DSpace): How to contribute in general (via code, documentation, bug reports, expertise, etc)
-* [Code Contribution Guidelines](https://wiki.duraspace.org/display/DSPACE/Code+Contribution+Guidelines): How to give back code or contribute features, bug fixes, etc.
-* [DSpace Community Advisory Team (DCAT)](https://wiki.duraspace.org/display/cmtygp/DSpace+Community+Advisory+Team): If you are not a developer, we also have an interest group specifically for repository managers. The DCAT group meets virtually, once a month, and sends open invitations to join their meetings via the [DCAT mailing list](https://groups.google.com/d/forum/DSpaceCommunityAdvisoryTeam).
+* [How to Contribute to DSpace](https://wiki.lyrasis.org/display/DSPACE/How+to+Contribute+to+DSpace): How to contribute in general (via code, documentation, bug reports, expertise, etc)
+* [Code Contribution Guidelines](https://wiki.lyrasis.org/display/DSPACE/Code+Contribution+Guidelines): How to give back code or contribute features, bug fixes, etc.
+* [DSpace Community Advisory Team (DCAT)](https://wiki.lyrasis.org/display/cmtygp/DSpace+Community+Advisory+Team): If you are not a developer, we also have an interest group specifically for repository managers. The DCAT group meets virtually, once a month, and sends open invitations to join their meetings via the [DCAT mailing list](https://groups.google.com/d/forum/DSpaceCommunityAdvisoryTeam).
 
-We also encourage GitHub Pull Requests (PRs) at any time. Please see our [Development with Git](https://wiki.duraspace.org/display/DSPACE/Development+with+Git) guide for more info.
+We also encourage GitHub Pull Requests (PRs) at any time. Please see our [Development with Git](https://wiki.lyrasis.org/display/DSPACE/Development+with+Git) guide for more info.
 
 In addition, a listing of all known contributors to DSpace software can be
-found online at: https://wiki.duraspace.org/display/DSPACE/DSpaceContributors
+found online at: https://wiki.lyrasis.org/display/DSPACE/DSpaceContributors
 
 ## Getting Help
 
@@ -82,10 +86,10 @@ DSpace provides public mailing lists where you can post questions or raise topic
 We welcome everyone to participate in these lists:
 
 * [dspace-community@googlegroups.com](https://groups.google.com/d/forum/dspace-community) : General discussion about DSpace platform, announcements, sharing of best practices
-* [dspace-tech@googlegroups.com](https://groups.google.com/d/forum/dspace-tech) : Technical support mailing list. See also our guide for [How to troubleshoot an error](https://wiki.duraspace.org/display/DSPACE/Troubleshoot+an+error).
+* [dspace-tech@googlegroups.com](https://groups.google.com/d/forum/dspace-tech) : Technical support mailing list. See also our guide for [How to troubleshoot an error](https://wiki.lyrasis.org/display/DSPACE/Troubleshoot+an+error).
 * [dspace-devel@googlegroups.com](https://groups.google.com/d/forum/dspace-devel) : Developers / Development mailing list
 
-Additional support options are listed at https://wiki.duraspace.org/display/DSPACE/Support
+Additional support options are listed at https://wiki.lyrasis.org/display/DSPACE/Support
 
 DSpace also has an active service provider network. If you'd rather hire a service provider to
 install, upgrade, customize or host DSpace, then we recommend getting in touch with one of our
@@ -93,7 +97,7 @@ install, upgrade, customize or host DSpace, then we recommend getting in touch w
 
 ## Issue Tracker
 
-The DSpace Issue Tracker can be found at: https://jira.duraspace.org/projects/DS/summary
+Use [GitHub Issues](https://github.com/DSpace/dspace-api-lang/issues) in this project.
 
 ## License
 
