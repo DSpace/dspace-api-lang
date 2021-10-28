@@ -6,7 +6,7 @@
     <description>
       DSpace API Language Packs to support multiple languages on backend.
     </description>
-    <version>7.0.1-SNAPSHOT</version>
+    <version>7.1.0</version>
     <url>https://github.com/dspace/dspace-api-lang</url>
 
     <organization>
@@ -328,7 +328,7 @@
         <connection>scm:git:git@github.com:DSpace/dspace-api-lang.git</connection>
         <developerConnection>scm:git:git@github.com:DSpace/dspace-api-lang.git</developerConnection>
         <url>git@github.com:DSpace/dspace-api-lang.git</url>
-        <tag>dspace-api-lang-6.0.6</tag>
+        <tag>dspace-api-lang-7.1.0</tag>
     </scm>
 
     <!-- Configure our release repositories to use Sonatype.
