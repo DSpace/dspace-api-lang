@@ -6,7 +6,7 @@
     <description>
       DSpace API Language Packs to support multiple languages on backend.
     </description>
-    <version>8.0.1-SNAPSHOT</version>
+    <version>8.0.0-SNAPSHOT</version>
     <url>https://github.com/dspace/dspace-api-lang</url>
 
     <organization>
