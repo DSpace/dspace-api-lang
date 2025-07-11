@@ -6,7 +6,7 @@
     <description>
       DSpace API Language Packs to support multiple languages on backend.
     </description>
-    <version>9.0.1</version>
+    <version>9.0.2-SNAPSHOT</version>
     <url>https://github.com/dspace/dspace-api-lang</url>
 
     <organization>
@@ -332,7 +332,7 @@
         <connection>scm:git:git@github.com:DSpace/dspace-api-lang.git</connection>
         <developerConnection>scm:git:git@github.com:DSpace/dspace-api-lang.git</developerConnection>
         <url>https://github.com/DSpace/dspace-api-lang</url>
-        <tag>dspace-api-lang-9.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <licenses>
